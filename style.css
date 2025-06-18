@@ -8,10 +8,14 @@
     width: fit-content;
 }
 
+#heading{
+    font-size: 3em;
+}
+
 #gameContainer{
     display: grid;
     place-items: center;
-    padding:10px ;
+    padding: 10px;
     margin-top: 10px;
 }
 
@@ -26,4 +30,33 @@
     display: grid;
     align-items: center;
     place-items: center;
+}
+
+#box--1{
+    border-bottom: none !important;
+    border-right: none !important;
+}
+#box--2{
+    border-bottom: none !important;
+        border-right: none !important;
+}
+#box--3{
+    border-bottom: none !important;
+}
+#box--4{
+    border-bottom: none !important;
+    border-right: none !important;
+}
+#box--5{
+    border-bottom: none !important;
+    border-right: none !important;
+}
+#box--6{
+    border-bottom: none !important;
+}
+#box--7{
+   border-right: none !important;
+}
+#box--8{
+    border-right: none !important;
 }
