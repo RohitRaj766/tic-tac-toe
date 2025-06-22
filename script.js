@@ -36,6 +36,7 @@ resetBtn.addEventListener('click', () => {
 // checkResult
 
 function checkResult() {
+    let flag = false;
     const win = [
         [0, 1, 2],
         [1, 4, 7],
@@ -54,10 +55,15 @@ function checkResult() {
         const valB = indiBoxes[b].innerHTML;
         const valC = indiBoxes[c].innerHTML;
 
-
         if (valA && valA === valB && valB === valC) {
             msgBox.innerHTML = `${valB} won!`;
             indiBoxes.forEach(box => box.style.pointerEvents = "none");
+            flag = true;
         }
     });
+
+       if (!flag) {
+        const isDraw = Array.from(indiBoxes).every(box => box.innerHTML !== "");
+        msgBox.innerHTML = isDraw ? "Draw!" : "";
+    }
 }
